@@ -143,3 +143,42 @@
   - `continue` 跳转标签
 
 ### 方法
+
+- 可命名参数：{param1, param2,...}
+- 可选位置参数：[param1, param2,...]
+- 如果存在具体参数，可选参数声明，必须在参数后面
+
+### 枚举
+
+```dart
+enum Season {
+  spring,
+  summer,
+  autumn,
+  winter
+}
+var curSeason = Season.winter;
+print(curSeaon.index)
+switch(curSeaon) {
+  case Season.spring:
+    print("1-3 month");
+    break;
+  case Season.summer:
+    print("4-6 month");
+    break;
+  case Season.autumn:
+    print("7-9 month");
+    break;
+  case Season.winter:
+    print("10-12")
+    break;
+}
+```
+
+### 泛型
+
+```dart
+var list = new List<String>();
+list.add(1); // error
+
+```
